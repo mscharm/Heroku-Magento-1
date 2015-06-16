@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config>
+    <global>
+        <install>
+            <date><![CDATA[Tue, 16 Jun 2015 06:29:23 +0000]]></date>
+        </install>
+        <crypt>
+            <key><![CDATA[92b8228c794f8176998b82d714003378]]></key>
+        </crypt>
+        <disable_local_modules>false</disable_local_modules>
+        <resources>
+            <db>
+                <table_prefix><![CDATA[]]></table_prefix>
+            </db>
+            <default_setup>
+                <connection>
+                    <host><![CDATA[YOUR_DATABASE_HOST_NAME]]></host>
+                    <username><![CDATA[YOUR_DATABASE_USERNAME]]></username>
+                    <password><![CDATA[YOUR_DATABASE_PASSWORD]]></password>
+                    <dbname><![CDATA[YOUR_DATABASE_DATABASE_NAME]]></dbname>
+                    <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
+                    <model><![CDATA[mysql4]]></model>
+                    <type><![CDATA[pdo_mysql]]></type>
+                    <pdoType><![CDATA[]]></pdoType>
+                    <active>1</active>
+                </connection>
+            </default_setup>
+        </resources>
+        <session_save><![CDATA[files]]></session_save>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <frontName><![CDATA[admin]]></frontName>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>
